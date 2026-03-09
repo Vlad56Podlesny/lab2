@@ -6,7 +6,6 @@
 class User {
 private:
     std::string username;
-
 public:
     User();
     User(std::string username);

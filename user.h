@@ -1,7 +1,7 @@
 #ifndef LAB2_USER_H
 #define LAB2_USER_H
 #include <iostream>
-#include "User.h"
+#include "user.h"
 
 User::User() : username("guest") {}
 
