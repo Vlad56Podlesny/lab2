@@ -4,15 +4,23 @@
 
 class Folder {
 private:
-    std::string folderName;
+    std::string name;
     int fileCount;
 
 public:
     Folder();
-    Folder(std::string folderName, int fileCount);
-
-    void showFolder();
-
+    Folder(std::string name, int fileCount = 0);
+    Folder(const Folder& other);
     ~Folder();
+
+    void setName(std::string name);
+    std::string getName() const;
+
+    void setFileCount(int fileCount);
+    int getFileCount() const;
+
+    void addFile();
+    void printInfo() const;
 };
-#endif //LAB2_FOLDER_H
+
+#endif

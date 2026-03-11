@@ -1,15 +1,11 @@
-cmake_minimum_required(VERSION 4.0)
-project(lab2)
+cmake_minimum_required(VERSION 3.26)
+project(Lab2_FileSystem)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 17)
 
-include_directories(.)
-
-add_executable(lab2
-        file.cpp
-        file.h
-        folder.cpp
-        folder.h
+add_executable(Lab2_FileSystem
         main.cpp
-        user.cpp
-        user.h)
+        File.cpp
+        Folder.cpp
+        FileSystem.cpp
+)
